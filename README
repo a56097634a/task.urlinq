@@ -1,0 +1,14 @@
+How to input
+Input the length of array in the texfield, and the textfield accepts all characters.
+Number 0, 1, 2, 3, 4, 5 will be considered as themselfs;
+Numbers larger than 5 will be considered as 5;
+Decimal Numbers will be considered as their integral part;  
+Other characters will be considered as 0;
+
+Result
+When the input is 0, the back image will show up in the middle;
+When the input is 1, 2, 3, 4, 5, the composite image with cropped image representations will show up in some format from right to left;
+The image representation will be chosen randomly from 5 images in side main bundle, that is because the content of input array of objects does not matter;
+Especially: when the input is 5, the left end of image queues will be covered with gradient layer which makes the fifth image looks like fading away.
+
+There are comments in the code.
