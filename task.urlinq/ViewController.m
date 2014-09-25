@@ -64,7 +64,7 @@
     gradient.frame = imageView.bounds;
     gradient.locations = [NSArray arrayWithObjects:(id)[NSNumber numberWithDouble:0.65],(id)[NSNumber numberWithDouble:1], nil];
     gradient.colors = [NSArray arrayWithObjects:(id)[[UIColor clearColor] CGColor],(id)[[UIColor whiteColor] CGColor], nil];
-    gradient.startPoint = CGPointMake(0.15, 0);
+    gradient.startPoint = CGPointMake(0.2, 0);
     gradient.endPoint = CGPointMake(0, 0);
     //check is the array is nil
     if (array == nil) {
@@ -80,7 +80,7 @@
             tempImage = [imp imageRepresentationWithSize:imageRepresentationSize];
             //spacing, get the space by several adjustments
             CGFloat space = tempImage.size.width/(array.count * 4);
-            NSLog(@"spacs:%f", space);
+//            NSLog(@"spacs:%f", space);
             CGFloat startX = compositeSize.width - (space + tempImage.size.width)*(i+1);
             CGFloat startY = 0.0;
             //Here is no-spacing stradegy:
